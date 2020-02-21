@@ -42,7 +42,7 @@ $scan_result = Invoke-Expression "& 'C:\Program Files\smartmontools\bin\smartctl
 foreach ($device in $scan_result.devices.name) {
 
 ## Scan Devices -> smart_result - one device per line
-    $smart_result = Invoke-Expression "c:\smartctl.exe -d ata -a $device --json=c" | ConvertFrom-Json
+    $smart_result = Invoke-Expression "& 'C:\Program Files\smartmontools\bin\smartctl.exe' -d ata -a $device --json=c" | ConvertFrom-Json
 ## Remove Blanks from Devicename
 	$namestrip=$smart_result.model_name.replace(' ','')
 
