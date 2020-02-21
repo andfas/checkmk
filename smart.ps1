@@ -12,7 +12,9 @@
 ## afassl@progis.de
 ## 20.2.2020
 #########################################################################################
-
+# to be placed in
+# %PROGRAMFILES(X86)%\check_mk\local	Windows (Agent up to Version 1.5.0)
+# %PROGRAMDATA%\checkmk\agent\local	Windows (Agent from Version 1.6.0)
 #########################################################################################
 # General Approach
 # This checks delivers same results as the smart local plugin for linux systems
