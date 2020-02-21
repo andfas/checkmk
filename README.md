@@ -1,0 +1,2 @@
+# checkmk
+Probes for CheckMK
